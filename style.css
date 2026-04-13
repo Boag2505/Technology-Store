@@ -1,0 +1,9 @@
+header {
+    background-image: linear-gradient(to bottom, #A0D3F5, #1976D2);
+}
+
+.button {
+    background-color: #002852;
+    border-radius: 50px;
+    box-shadow: 12px;
+}
