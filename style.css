@@ -18,21 +18,36 @@ header {
     /* Cắt ảnh vừa khung hình mà không bị méo */
 }
 
+/* H */
+.h-color {
+    color: #002852;
+}
+
+/* Box */
+.box-introduction {
+    background-image: linear-gradient(to bottom,#0353B0, #01234A);
+    border-radius: 16px;
+}
+
+.box-product {
+    background-image: linear-gradient(to bottom, #FFFFFF, #E5E5E5);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+.box-product:hover {
+    border-color: #68819E;
+    transform: translateY(-5px);
+    background-image: linear-gradient(to bottom, #B5D7FF, #5F95D4);
+}
+
 /* Footer */
-/* CSS Tùy chỉnh cho Footer */
-.custom-footer a {
-    text-decoration: none;
-    /* Bỏ gạch chân */
-    color: #000000;
-    /* Chuyển thành màu đen */
+/* Tùy chỉnh link ở Footer */
+.footer-link {
+    transition: all 0.3s ease; /* Giúp hiệu ứng chuyển màu mượt mà hơn */
 }
 
-/* Hiệu ứng hover: Đổi màu mờ đi một chút khi di chuột vào (Tùy chọn) */
-.custom-footer a:hover {
-    color: #555555;
-}
-
-/* Giảm khoảng cách mặc định của thẻ <p> bên trong thẻ <a> để danh sách nhìn gọn gàng hơn */
-.custom-footer a p {
-    margin-bottom: 8px;
+.footer-link:hover {
+    color: #0d6efd !important; /* Đổi sang màu xanh primary của Bootstrap */
+    text-decoration: underline !important; /* Gạch chân */
+    transform: translateX(5px); /* Trượt nhẹ sang phải 5px tạo cảm giác tương tác tốt */
 }
