@@ -19,185 +19,246 @@
 
     <body>
         <header class="bg-primary text-white p-3">
-            <div class="container-fluid d-flex align-items-center gap-4 flex-wrap px-5">
+            <div class="container-fluid d-flex align-items-center justify-content-between gap-4 flex-wrap px-5">
                 <img src="img/Logo_TechMart_2-removebg.png" class="img-fluid me-3" style="max-height: 75px;" alt="TechMart">
-                <!-- Nút chọn địa chỉ -->
-                <div class="dropdown">
-                    <button class="button btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-geo-alt me-2"></i> Địa chỉ
-                    </button>
 
-                    <ul class="dropdown-menu p-3" style="min-width: 400px; max-height: 300px; overflow-y: auto;">
-                        <li><p class="text-center text-muted mb-3">Vui lòng chọn tỉnh, thành phố để biết chính xác giá, khuyến mãi và tồn kho</p></li>
-                        <li>
-                            <div class="container-fluid px-0">
-                                <div class="row align-items-start">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">TP HCM</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hà Nội</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">An Giang</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bà Rịa - Vũng Tàu</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bạc Liêu</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bắc Giang</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bắc Ninh</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bến Tre</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình Dương</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình Định</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình Phước</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình Thuận</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Cà Mau</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Cần Thơ</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đà Nẵng</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đắk Lắk</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đồng Nai</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đồng Tháp</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Gia Lai</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hà Nam</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hà Tỉnh</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hải Dương</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hải Phòng</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Khánh Hòa</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Kiên Giang</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Lạng Sơn</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Lâm Đồng</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Long An</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Ninh Bình</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Ninh Thuận</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Phú Thọ</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Quảng Bình</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Sóc Trăng</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Tây Ninh</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thái Bình</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thái Nguyên</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thanh Hóa</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thừa Thiên - Huế</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Tiền Giang</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Trà Vinh</a></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Vĩnh Long</a></div>
-                                    <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Vĩnh Phúc</a></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Nút trọn loại sản phẩm -->
-                <div class="dropdown">
-                    <button class="button btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-columns-gap me-2"></i> Danh mục
-                    </button>
-
-                    <ul class="dropdown-menu p-2" style="min-width: 200px;">
-                        <li>
-                            <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
-                                <span><i class="bi bi-phone me-2"></i> Điện thoại</span>
-                                <i class="bi bi-arrow-right-short fs-5"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
-                                <span><i class="bi bi-laptop me-2"></i> Laptop</span>
-                                <i class="bi bi-arrow-right-short fs-5"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
-                                <span><i class="bi bi-tablet me-2"></i> Tablet</span>
-                                <i class="bi bi-arrow-right-short fs-5"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Thanh tìm kiếm -->
-                <form class="form-search d-flex flex-grow-1" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control rounded-start-pill" placeholder="Bạn cần tìm sản phẩm gì hôm nay?" aria-label="Search">
-                        <button class="btn btn-light rounded-end-pill" type="submit">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                </form>
-
-                <!-- Giỏ hàng -->
-                <button class="button btn btn-primary position-relative">
-                    Giỏ hàng <i class="bi bi-cart3 fs-5 ms-2"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        3
-                    </span>
+                <!-- Menu Hamburger -->
+                <button class="btn btn-outline-light border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuThuGon" aria-expanded="false">
+                    <i class="bi bi-list fs-1"></i>
                 </button>
 
-                <!-- Tùy chọn người dùng -->
-                 <div class="dropdown">
-                    <button class="button btn btn-primary px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person-circle"></i>
-                    </button>
-
-                    <ul class="dropdown-menu p-3" style="min-width: 300px;">
-                        <img src="img/User.png" class="img-fluid rounded-circle d-block mx-auto" style="max-height: 75px;" alt="User">
-                        <div class="container pt-3 border-bottom border-black p-2">
-                            <button class="button btn btn-primary px-4 flex-fill" type="button">
-                                Đăng nhập
+                <div class="collapse d-lg-flex flex-grow-1 mt-3 mt-lg-0 custom-mobile-break" id="menuThuGon">
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-4 w-100">
+                
+                        <!-- Nút chọn địa chỉ -->
+                        <div class="dropdown">
+                            <button class="button btn btn-primary dropdown-toggle d-flex align-items-center justify-content-between w-100 text-start text-lg-center" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span><i class="bi bi-geo-alt me-2"></i> Địa chỉ</span>
                             </button>
-                            <button class="btn btn-outline-dark rounded-pill px-4 flex-fill" type="button">
-                                Đăng ký
+                
+                            <ul class="dropdown-menu p-3" style="min-width: 400px; max-height: 300px; overflow-y: auto;">
+                                <li>
+                                    <p class="text-center text-muted mb-3">Vui lòng chọn tỉnh, thành phố để biết chính xác giá, khuyến
+                                        mãi và tồn kho</p>
+                                </li>
+                                <li>
+                                    <div class="container-fluid px-0">
+                                        <div class="row align-items-start">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">TP
+                                                    HCM</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hà
+                                                    Nội</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">An
+                                                    Giang</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bà
+                                                    Rịa - Vũng Tàu</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bạc
+                                                    Liêu</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bắc
+                                                    Giang</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bắc
+                                                    Ninh</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bến
+                                                    Tre</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình
+                                                    Dương</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình
+                                                    Định</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình
+                                                    Phước</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Bình
+                                                    Thuận</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Cà
+                                                    Mau</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Cần
+                                                    Thơ</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đà
+                                                    Nẵng</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đắk
+                                                    Lắk</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đồng
+                                                    Nai</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Đồng
+                                                    Tháp</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Gia
+                                                    Lai</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hà
+                                                    Nam</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hà
+                                                    Tỉnh</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hải
+                                                    Dương</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Hải
+                                                    Phòng</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Khánh
+                                                    Hòa</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Kiên
+                                                    Giang</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Lạng
+                                                    Sơn</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Lâm
+                                                    Đồng</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Long
+                                                    An</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Ninh
+                                                    Bình</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Ninh
+                                                    Thuận</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Phú
+                                                    Thọ</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Quảng
+                                                    Bình</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Sóc
+                                                    Trăng</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Tây
+                                                    Ninh</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thái
+                                                    Bình</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thái
+                                                    Nguyên</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thanh
+                                                    Hóa</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Thừa
+                                                    Thiên - Huế</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Tiền
+                                                    Giang</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Trà
+                                                    Vinh</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Vĩnh
+                                                    Long</a></div>
+                                            <div class="col"><a class="dropdown-item border-bottom border-black border-1" href="#">Vĩnh
+                                                    Phúc</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <!-- Nút trọn loại sản phẩm -->
+                        <div class="dropdown">
+                            <button class="button btn btn-primary dropdown-toggle d-flex align-items-center justify-content-between w-100 text-start text-lg-center" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span><i class="bi bi-columns-gap me-2"></i> Danh mục</span>
                             </button>
+                
+                            <ul class="dropdown-menu p-2" style="min-width: 200px;">
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                        <span><i class="bi bi-phone me-2"></i> Điện thoại</span>
+                                        <i class="bi bi-arrow-right-short fs-5"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                        <span><i class="bi bi-laptop me-2"></i> Laptop</span>
+                                        <i class="bi bi-arrow-right-short fs-5"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                        <span><i class="bi bi-tablet me-2"></i> Tablet</span>
+                                        <i class="bi bi-arrow-right-short fs-5"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="container">
-                            <li class="border-bottom border-black p-2">
-                                <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
-                                    <span>Liên hệ</span>
-                                </a>
-                            </li>
-                            <li class="border-bottom border-black p-2">
-                                <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
-                                    <span>About Us</span>
-                                </a>
-                            </li>
+                
+                        <!-- Thanh tìm kiếm -->
+                        <form class="form-search d-flex flex-grow-1" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-start-pill"
+                                    placeholder="Bạn cần tìm sản phẩm gì hôm nay?" aria-label="Search">
+                                <button class="btn btn-light rounded-end-pill" type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                
+                        <!-- Giỏ hàng -->
+                        <button class="button btn btn-primary position-relative">
+                            Giỏ hàng <i class="bi bi-cart3 fs-5 ms-2"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3
+                            </span>
+                        </button>
+                
+                        <!-- Tùy chọn người dùng -->
+                        <div class="dropdown">
+                            <button class="button btn btn-primary px-3 w-100 text-start text-lg-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i>
+                                <span class="d-inline d-lg-none ps-2">Tài khoản</span>
+                            </button>
+                
+                            <ul class="dropdown-menu p-3" style="min-width: 300px;">
+                                <img src="img/User.png" class="img-fluid rounded-circle d-block mx-auto" style="max-height: 75px;"
+                                    alt="User">
+                                <div class="container pt-3 border-bottom border-black p-2">
+                                    <button class="button btn btn-primary px-4 flex-fill" type="button">
+                                        Đăng nhập
+                                    </button>
+                                    <button class="btn btn-outline-dark rounded-pill px-4 flex-fill" type="button">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                                <div class="container">
+                                    <li class="border-bottom border-black p-2">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                            <span>Liên hệ</span>
+                                        </a>
+                                    </li>
+                                    <li class="border-bottom border-black p-2">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                            <span>About Us</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
                         </div>
-                    </ul>
-                 </div>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -569,7 +630,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -584,7 +645,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -599,7 +660,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -614,7 +675,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -631,7 +692,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -646,7 +707,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -661,7 +722,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -676,7 +737,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -693,7 +754,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -708,7 +769,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -723,7 +784,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>
@@ -738,7 +799,7 @@
                                                 <div class="position-relative d-inline-block">
                                                     <img src="img/img_products/phone.png" class="img-fluid rounded" alt="Ảnh sản phẩm">
                                                     <span class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
-                                                        SALE 25%
+                                                        SALE 8/3
                                                     </span>
                                                 </div>
                                                 <p class="fs-4"><span class="fw-semibold">Samsung Galaxy S26 Ultra</span> 12GB 256GB</p>

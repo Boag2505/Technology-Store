@@ -1,3 +1,10 @@
+/* Ép menu thu gọn rơi xuống hàng mới trên màn hình nhỏ */
+@media (max-width: 991px) {
+    .custom-mobile-break {
+        flex-basis: 100%;
+    }
+}
+
 /* Header */
 header {
     background-image: linear-gradient(to bottom, #A0D3F5, #1976D2);
