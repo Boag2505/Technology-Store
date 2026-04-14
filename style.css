@@ -40,6 +40,45 @@ header {
     background-image: linear-gradient(to bottom, #B5D7FF, #5F95D4);
 }
 
+.box-product-info {
+    background-color: #f4f9ff;
+    border-radius: 16px;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+.box-product-info:hover {
+    background-color: #f4f9ff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 40, 82, 0.3); /* Thêm đổ bóng nhẹ cho nổi bật */
+    transform: translateY(-5px);
+}
+
+.box-sale {
+    border-radius: 0px 16px 0px 5px !important;
+}
+
+/* Trạng thái mặc định (Khi nút CHƯA được chọn) */
+.box-tab {
+    border-radius: 16px !important;
+    background-color: white;
+    color: #002852 !important; /* Chữ màu xanh đen của TechMart */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+    text-align: center;
+}
+
+/* Hiệu ứng khi lướt chuột qua (Hover) */
+.box-tab:hover:not(.active) {
+    background-color: rgba(0, 110, 227, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Trạng thái ACTIVE (Khi nút ĐƯỢC CHỌN) */
+.nav-pills .box-tab.active {
+    background-image: linear-gradient(to bottom, #0353B0, #01234A) !important; /* Trả lại màu gradient của bạn */
+    color: #ffffff !important; /* Đổi chữ thành màu trắng */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 40, 82, 0.3); /* Thêm đổ bóng nhẹ cho nổi bật */
+}
+
 /* Footer */
 /* Tùy chỉnh link ở Footer */
 .footer-link {
