@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
     <head>
-        <title>Title</title>
+        <title>TechMart</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,8 +19,9 @@
 
     <body>
         <header class="bg-primary text-white p-3">
-            <div class="container-fluid d-flex align-items-center gap-4">
+            <div class="container-fluid d-flex align-items-center gap-4 flex-wrap px-5">
                 <img src="img/Logo_TechMart_2-removebg.png" class="img-fluid me-3" style="max-height: 75px;" alt="TechMart">
+                <!-- Nút chọn địa chỉ -->
                 <div class="dropdown">
                     <button class="button btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-geo-alt me-2"></i> Địa chỉ
@@ -117,6 +118,7 @@
                     </ul>
                 </div>
 
+                <!-- Nút trọn loại sản phẩm -->
                 <div class="dropdown">
                     <button class="button btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-columns-gap me-2"></i> Danh mục
@@ -143,11 +145,158 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Thanh tìm kiếm -->
+                <form class="form-search d-flex flex-grow-1" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control rounded-start-pill" placeholder="Bạn cần tìm sản phẩm gì hôm nay?" aria-label="Search">
+                        <button class="btn btn-light rounded-end-pill" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Giỏ hàng -->
+                <button class="button btn btn-primary position-relative">
+                    Giỏ hàng <i class="bi bi-cart3 fs-5 ms-2"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        3
+                    </span>
+                </button>
+
+                <!-- Tùy chọn người dùng -->
+                 <div class="dropdown">
+                    <button class="button btn btn-primary px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </button>
+
+                    <ul class="dropdown-menu p-3" style="min-width: 300px;">
+                        <img src="img/User.png" class="img-fluid rounded-circle d-block mx-auto" style="max-height: 75px;" alt="User">
+                        <div class="container pt-3 border-bottom border-black p-2">
+                            <button class="button btn btn-primary px-4 flex-fill" type="button">
+                                Đăng nhập
+                            </button>
+                            <button class="btn btn-outline-dark rounded-pill px-4 flex-fill" type="button">
+                                Đăng ký
+                            </button>
+                        </div>
+                        <div class="container">
+                            <li class="border-bottom border-black p-2">
+                                <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                    <span>Liên hệ</span>
+                                </a>
+                            </li>
+                            <li class="border-bottom border-black p-2">
+                                <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                    <span>About Us</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                 </div>
             </div>
         </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
+
+        <main>
+            <!-- Banner trượt -->
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-12 mb-4">
+                        <div id="bannerTruot" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#bannerTruot" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#bannerTruot" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#bannerTruot" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+            
+                            <div class="carousel-inner rounded shadow">
+                                <div class="carousel-item active">
+                                    <a href="#link-san-pham-1">
+                                        <img src="img/Banner1.png" class="d-block w-100" alt="Quảng cáo 1">
+                                    </a>
+                                </div>
+            
+                                <div class="carousel-item">
+                                    <a href="#link-san-pham-2">
+                                        <img src="img/Banner1.png" class="d-block w-100" alt="Quảng cáo 2">
+                                    </a>
+                                </div>
+            
+                                <div class="carousel-item">
+                                    <a href="#link-san-pham-3">
+                                        <img src="img/Banner3.png" class="d-block w-100" alt="Quảng cáo 3">
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#bannerTruot" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#bannerTruot" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 mb-4">
+                        <div class="row h-100">
+                            <div class="col-4 col-md-12 mb-md-3 mb-0">
+                                <img src="img/QC1.png" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover" alt="Quảng cáo 1">
+                            </div>
+                            <div class="col-4 col-md-12 mb-md-3 mb-0">
+                                <img src="img/QC2.png" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover" alt="Quảng cáo 2">
+                            </div>
+                            <div class="col-4 col-md-12">
+                                <img src="img/QC3.png" class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover" alt="Quảng cáo 3">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-light pt-5 pb-4 mt-5 border-top">
+            <div class="container custom-footer my-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <p class="h6 fw-bold mb-3">Thông tin về chính sách</p>
+                        <a href="#"><p>Mua hàng và thanh toán Online</p></a>
+                        <a href="#"><p>Mua hàng trả góp Online</p></a>
+                        <a href="#"><p>Mua hàng trả góp bằng thẻ tín dụng</p></a>
+                        <a href="#"><p>Chính sách gia hàng</p></a>
+                        <a href="#"><p>Chính sách đổi trả</p></a>
+                        <a href="#"><p>Tra thông tin bảo hành</p></a>
+                        <a href="#"><p>Tra cứu hóa đơn điện tử</p></a>
+                        <a href="#"><p>Thông tin hóa đơn mua hàng</p></a>
+                        <a href="#"><p>VAT Refund</p></a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <p class="h6 fw-bold mb-3">Dịch vụ và thông tin khác</p>
+                        <a href="#"><p>Khách hàng doanh nghiệp</p></a>
+                        <a href="#"><p>Ưu đãi thanh toán</p></a>
+                        <a href="#"><p>Quy chế hoạt động</p></a>
+                        <a href="#"><p>Chính sách bảo mật thông tin cá nhân</p></a>
+                        <a href="#"><p>Chính sách bảo hành</p></a>
+                        <a href="#"><p>Liên hệ hợp tác kinh doanh</p></a>
+                        <a href="#"><p>Tuyển dụng</p></a>
+                        <a href="#"><p>Dịch vụ bảo hành mở rộng</p></a>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12 d-flex flex-column h-100">
+                        <div>
+                            <img src="img/Logo_TechMart-removebg.png" class="img-fluid me-3" alt="TechMart">
+                        </div>
+                        <div class="mt-auto text-end pt-4">
+                            <p>© 2025 Creative Nest Inc. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Bundle (includes Popper) -->
         <script

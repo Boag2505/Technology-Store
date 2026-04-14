@@ -1,9 +1,38 @@
+/* Header */
 header {
     background-image: linear-gradient(to bottom, #A0D3F5, #1976D2);
 }
 
+/* Button */
 .button {
     background-color: #002852;
     border-radius: 50px;
     box-shadow: 12px;
+}
+
+/* Banner */
+/* Tùy chỉnh chiều cao banner để ảnh không bị quá to trên màn hình lớn */
+.carousel-item img {
+    height: auto;
+    object-fit: cover;
+    /* Cắt ảnh vừa khung hình mà không bị méo */
+}
+
+/* Footer */
+/* CSS Tùy chỉnh cho Footer */
+.custom-footer a {
+    text-decoration: none;
+    /* Bỏ gạch chân */
+    color: #000000;
+    /* Chuyển thành màu đen */
+}
+
+/* Hiệu ứng hover: Đổi màu mờ đi một chút khi di chuột vào (Tùy chọn) */
+.custom-footer a:hover {
+    color: #555555;
+}
+
+/* Giảm khoảng cách mặc định của thẻ <p> bên trong thẻ <a> để danh sách nhìn gọn gàng hơn */
+.custom-footer a p {
+    margin-bottom: 8px;
 }
