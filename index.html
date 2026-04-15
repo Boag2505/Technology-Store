@@ -178,7 +178,7 @@
                         </div>
                 
                         <!-- Nút trọn loại sản phẩm -->
-                        <div class="dropdown order-2 order-lg-1">
+                        <div class="dropdown order-3 order-lg-1">
                             <button class="button btn btn-primary dropdown-toggle d-flex align-items-center justify-content-between w-100 text-start text-lg-center" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <span><i class="bi bi-columns-gap me-2"></i> Danh mục</span>
@@ -186,19 +186,19 @@
                 
                             <ul class="dropdown-menu p-2" style="min-width: 200px;">
                                 <li>
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
-                                        <span><i class="bi bi-phone me-2"></i> Điện thoại</span>
-                                        <i class="bi bi-arrow-right-short fs-5"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#tab-laptop">
                                         <span><i class="bi bi-laptop me-2"></i> Laptop</span>
                                         <i class="bi bi-arrow-right-short fs-5"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#tab-phone">
+                                        <span><i class="bi bi-phone me-2"></i> Điện thoại</span>
+                                        <i class="bi bi-arrow-right-short fs-5"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="#tab-tablet">
                                         <span><i class="bi bi-tablet me-2"></i> Tablet</span>
                                         <i class="bi bi-arrow-right-short fs-5"></i>
                                     </a>
@@ -396,7 +396,7 @@
             </div>
 
             <!-- Sản phẩm đề xuất -->
-            <div class="container my-4">
+            <div class="container my-4" id="khu-vuc-san-pham">
                 <div class="row">
                     <p class="h3 h-color">SẢN PHẨM ĐỀ XUẤT</p>
                 </div>
@@ -409,10 +409,10 @@
                                 <button class="box-tab btn btn-primary p-3 mb-3 active" id="tab-laptop" data-bs-target="#content-laptop" type="button" data-bs-toggle="pill" role="tab">
                                     <span class="h3">LAPTOP</span>
                                 </button>
-                                <button class="box-tab btn btn-primary p-3 mb-3" id="phone" data-bs-target="#content-phone" type="button" data-bs-toggle="pill" role="tab">
+                                <button class="box-tab btn btn-primary p-3 mb-3" id="tab-phone" data-bs-target="#content-phone" type="button" data-bs-toggle="pill" role="tab">
                                     <span class="h3">ĐIỆN THOẠI</span>
                                 </button>
-                                <button class="box-tab btn btn-primary p-3 mb-3" id="tablet" data-bs-target="#content-tablet" type="button" data-bs-toggle="pill" role="tab">
+                                <button class="box-tab btn btn-primary p-3 mb-3" id="tab-tablet" data-bs-target="#content-tablet" type="button" data-bs-toggle="pill" role="tab">
                                     <span class="h3">TABLET</span>
                                 </button>
                             </div>
@@ -434,7 +434,7 @@
                     
                             <div class="tab-pane fade show active" id="content-laptop" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-6">
                                         <a href="#" class="text-decoration-none text-reset">
                                             <div class="box-product-info p-3 mb-4">
                                                 <div class="position-relative d-inline-block">
@@ -496,7 +496,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-6">
                                         <a href="#" class="text-decoration-none text-reset">
                                             <div class="box-product-info p-3 mb-4">
                                                 <div class="position-relative d-inline-block">
@@ -625,7 +625,7 @@
                     
                             <div class="tab-pane fade" id="content-phone" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-6">
                                         <a href="#" class="text-decoration-none text-reset">
                                             <div class="box-product-info p-3 mb-4">
                                                 <div class="position-relative d-inline-block">
@@ -687,7 +687,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-6">
                                         <a href="#" class="text-decoration-none text-reset">
                                             <div class="box-product-info p-3 mb-4">
                                                 <div class="position-relative d-inline-block">
@@ -816,7 +816,7 @@
                     
                             <div class="tab-pane fade" id="content-tablet" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-6">
                                         <a href="#" class="text-decoration-none text-reset">
                                             <div class="box-product-info p-3 mb-4">
                                                 <div class="position-relative d-inline-block">
@@ -878,7 +878,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-6">
                                         <a href="#" class="text-decoration-none text-reset">
                                             <div class="box-product-info p-3 mb-4">
                                                 <div class="position-relative d-inline-block">
