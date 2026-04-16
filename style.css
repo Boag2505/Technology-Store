@@ -15,10 +15,12 @@ html {
     }
 }
 
+
 /* Header */
 header {
     background-image: linear-gradient(to bottom, #A0D3F5, #1976D2);
 }
+
 
 /* Button */
 .button {
@@ -27,6 +29,49 @@ header {
     box-shadow: 12px;
 }
 
+
+/* Nút quay về đầu trang */
+#backToTopBtn {
+    background-image: linear-gradient(to bottom, #0353B0, #01234A);
+    display: none;/* Ẩn nút theo mặc định */
+    position: fixed;/* Ghim vị trí trên màn hình */
+    bottom: 30px;/* Cách dưới lên 30px */
+    right: 30px;/* Cách lề phải 30px */
+    z-index: 99;/* Đảm bảo nút luôn nằm trên các thành phần khác */
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Đổ bóng nhẹ cho nút nổi bật hơn */
+    transition: all 0.3s ease;/* Hiệu ứng mượt khi hover */
+}
+
+/* Đổi màu một chút khi người dùng di chuột vào */
+#backToTopBtn:hover {
+    transform: translateY(-3px);/* Nảy lên một chút khi hover */
+}
+
+
+/* H */
+.h-color {
+    color: #002852;
+}
+
+
+/* Footer */
+/* Tùy chỉnh link ở Footer */
+.footer-link {
+    transition: all 0.3s ease; /* Giúp hiệu ứng chuyển màu mượt mà hơn */
+}
+
+.footer-link:hover {
+    color: #0d6efd !important; /* Đổi sang màu xanh primary của Bootstrap */
+    text-decoration: underline !important; /* Gạch chân */
+    transform: translateX(5px); /* Trượt nhẹ sang phải 5px tạo cảm giác tương tác tốt */
+}
+
+
+/* --------------------------------------------------------------------------------------- */
 /* Banner */
 /* Tùy chỉnh chiều cao banner để ảnh không bị quá to trên màn hình lớn */
 .carousel-item img {
@@ -35,10 +80,6 @@ header {
     /* Cắt ảnh vừa khung hình mà không bị méo */
 }
 
-/* H */
-.h-color {
-    color: #002852;
-}
 
 /* Box */
 .box-introduction {
@@ -96,15 +137,34 @@ header {
     box-shadow: 0 4px 8px rgba(0, 40, 82, 0.3); /* Thêm đổ bóng nhẹ cho nổi bật */
 }
 
-/* Footer */
-/* Tùy chỉnh link ở Footer */
-.footer-link {
-    transition: all 0.3s ease; /* Giúp hiệu ứng chuyển màu mượt mà hơn */
+
+/* --------------------------------------------------------------------------------------- */
+/* Thuộc tính cho phần chọn option sản phẩm */
+/* 1. Trạng thái mặc định: Viền xám và ẩn dấu tick */
+.option-label {
+  border: 1px solid #ced4da !important; /* Màu xám viền chuẩn của Bootstrap */
+  transition: all 0.2s ease-in-out;
 }
 
-.footer-link:hover {
-    color: #0d6efd !important; /* Đổi sang màu xanh primary của Bootstrap */
-    text-decoration: underline !important; /* Gạch chân */
-    transform: translateX(5px); /* Trượt nhẹ sang phải 5px tạo cảm giác tương tác tốt */
+.check-badge {
+  display: none !important; /* Ẩn dấu tick đi */
 }
 
+/* 2. Trạng thái khi được người dùng CHỌN (Checked) */
+.btn-check:checked + .option-label {
+  border-color: #0d6efd !important; /* Đổi viền sang màu xanh Primary */
+}
+
+.btn-check:checked + .option-label .check-badge {
+  display: flex !important; /* Hiện dấu tick lên */
+}
+
+/* 3. Hiệu ứng Hover cho đẹp (Tùy chọn) */
+.option-label:hover {
+  border-color: #a5c8fd !important; /* Xanh nhạt khi di chuột vào */
+}
+
+/* Tùy chỉnh nút mua hàng */
+.purchase {
+    background-image: linear-gradient(to bottom, #FF0000, #C20000);
+}

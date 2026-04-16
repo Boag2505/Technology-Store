@@ -21,7 +21,7 @@
     <body>
         <header class="bg-primary text-white p-3 sticky-top">
             <div class="container-fluid d-flex align-items-center justify-content-between gap-4 flex-wrap px-5">
-                <img loading="lazy" src="img/Logo_TechMart_2-removebg.png" class="img-fluid me-3 order-first" style="max-height: 50px;" alt="TechMart">
+                <a href="index.html"><img loading="lazy" src="img/Logo_TechMart_2-removebg.png" class="img-fluid me-3 order-first" style="max-height: 50px;" alt="TechMart"></a>
 
                 <!-- Menu Hamburger -->
                 <button class="btn btn-outline-light border-0 d-lg-none order-1" type="button" data-bs-toggle="collapse" data-bs-target="#menuThuGon" aria-expanded="false">
@@ -279,7 +279,7 @@
             <!-- Giới thiệu sản phẩm -->
             <div class="container my-4">
                 <div class="row">
-                    <div class="col-lg-5 col-md-3 col-2">
+                    <div class="col-lg-5 col-md-12 col-12 mb-3">
                         <!-- Giới thiệu sản phẩm dạng trượt ảnh -->
                         <div id="productSlider" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
@@ -289,30 +289,440 @@
                                 <button type="button" data-bs-target="#productSlider" data-bs-slide-to="3"></button>
                                 <button type="button" data-bs-target="#productSlider" data-bs-slide-to="4"></button>
                             </div>
-                        
+            
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img loading="lazy" src="img/img_products/product_ss_galaxy_s26_1.png" class="d-block w-100" alt="Sản phẩm 1">
+                                    <img loading="lazy" src="img/img_products/product_ss_galaxy_s26_1.png" class="d-block w-100"
+                                        alt="Sản phẩm 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img loading="lazy" src="img/img_products/product_ss_galaxy_s26_2.png" class="d-block w-100" alt="Sản phẩm 2">
+                                    <img loading="lazy" src="img/img_products/product_ss_galaxy_s26_2.png" class="d-block w-100"
+                                        alt="Sản phẩm 2">
                                 </div>
-                                <div class="carousel-item"><img loading="lazy" src="img/img_products/product_ss_galaxy_s26_3.png" class="d-block w-100"></div>
-                                <div class="carousel-item"><img loading="lazy" src="img/img_products/product_ss_galaxy_s26_4.png" class="d-block w-100"></div>
-                                <div class="carousel-item"><img loading="lazy" src="img/img_products/product_ss_galaxy_s26_5.png" class="d-block w-100"></div>
+                                <div class="carousel-item"><img loading="lazy" src="img/img_products/product_ss_galaxy_s26_3.png"
+                                        class="d-block w-100"></div>
+                                <div class="carousel-item"><img loading="lazy" src="img/img_products/product_ss_galaxy_s26_4.png"
+                                        class="d-block w-100"></div>
+                                <div class="carousel-item"><img loading="lazy" src="img/img_products/product_ss_galaxy_s26_5.png"
+                                        class="d-block w-100"></div>
                             </div>
-                        
-                            <button class="carousel-control-prev" type="button" data-bs-target="#productSlider" data-bs-slide="prev">
+            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#productSlider"
+                                data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#productSlider" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#productSlider"
+                                data-bs-slide="next">
                                 <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
                             </button>
                         </div>
 
+                        <!-- Bảng thông tin chi tiết sản phẩm -->
+                        <div class="col mt-5">
+                        
+                            <div class="row align-items-center">
+                                <div class="col justify-content-between">
+                                    <p class="h4 fw-bold">Thông số kỹ thuật</p>
+                                </div>
+                                <div class="col text-end">
+                                    <button type="button" class="btn text-primary border-0 justify-content-end" data-bs-toggle="modal"
+                                        data-bs-target="#thongTinChoTiet">
+                                        Xem tất cả
+                                        <i class="bi bi-caret-right-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                            <div class="table border border-2 border-secondary border-opacity-25 rounded-4 overflow-hidden shadow-sm mt-4 p-4">
+                        
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Kích thước màn hình</div>
+                                    <div class="col">Dynamic AMOLED 2X</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Công nghệ màn hình</div>
+                                    <div class="col">6.9 inches</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Camera sau</div>
+                                    <div class="col">
+                                        Camera siêu rộng: 50MP
+                                        Camera góc rộng: 200MP
+                                        Camera Tele (5x): 50MP
+                                        Camera Tele (3x): 10MP
+                                    </div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Camera trước</div>
+                                    <div class="col">12 MB</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Chipset</div>
+                                    <div class="col">Snapdragon 8 Elite Gen 5 dành cho Galaxy (3nm)</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Công nghệ NFC</div>
+                                    <div class="col">Có</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Dung lượng RAM</div>
+                                    <div class="col">16 GB</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Bộ nhớ trong</div>
+                                    <div class="col">1 TB</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Pin</div>
+                                    <div class="col">5000 mAh</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Thẻ SIM</div>
+                                    <div class="col">2 Nano-SIM + eSIM</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Độ phân giải màn hình</div>
+                                    <div class="col">3120 x 1440 pixels (Quad HD+)</div>
+                                </div>
+                                <div class="row align-items-center border-bottom border-2 pt-2 pb-2">
+                                    <div class="col ps-4">Tính năng màn hình</div>
+                                    <div class="col">
+                                        Tần số quét: 1-120Hz
+                                        Độ sáng tối đa: 2600 nits
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                    
+                    <!-- Chọn option, mua ngay, thêm vào giỏ hàng & Gợi ý sản phẩm -->
+                    <div class="col mb-3">
+
+                        <!-- Chọn option, mua ngay và thêm vào giỏ hàng -->
+                        <div class="row">
+                            <div class="product-selection-container mx-auto" style="max-width: 750px;">
+                            
+                                <h5 class="fw-bold mb-3 text-dark">Màu sắc</h5>
+                                <div class="row g-2 mb-4">
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="color" id="color_purple" checked>
+                                        <label
+                                            class="btn w-100 position-relative rounded-pill d-flex align-items-center px-3 py-2 option-label bg-white"
+                                            for="color_purple">
+                                            <img src="img/img_products/samsung-galaxy-s26-plus_purple.png" alt="Tím" class="me-2"
+                                                style="height: 24px; object-fit: contain;">
+                                            <span class="text-dark fs-5">Tím Cobalt</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="color" id="color_blue">
+                                        <label
+                                            class="btn w-100 position-relative rounded-pill d-flex align-items-center px-3 py-2 option-label bg-white"
+                                            for="color_blue">
+                                            <img src="img/img_products/samsung-galaxy-s26-plus_blue.png" alt="Xanh" class="me-2"
+                                                style="height: 24px; object-fit: contain;">
+                                            <span class="text-dark fs-5">Xanh Sky Blue</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="color" id="color_white">
+                                        <label
+                                            class="btn w-100 position-relative rounded-pill d-flex align-items-center px-3 py-2 option-label bg-white"
+                                            for="color_white">
+                                            <img src="img/img_products/samsung-galaxy-s26-plus_white.png" alt="Trắng" class="me-2"
+                                                style="height: 24px; object-fit: contain;">
+                                            <span class="text-dark fs-5">Trắng Classic</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="color" id="color_black">
+                                        <label
+                                            class="btn w-100 position-relative rounded-pill d-flex align-items-center px-3 py-2 option-label bg-white"
+                                            for="color_black">
+                                            <img src="img/img_products/samsung-galaxy-s26-plus_black.png" alt="Đen" class="me-2"
+                                                style="height: 24px; object-fit: contain;">
+                                            <span class="text-dark fs-5">Đen Classic</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                </div>
+                            
+                                <h5 class="fw-bold mb-3 text-dark">Phiên bản</h5>
+                                <div class="row g-2">
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="version" id="ver_1tb" checked>
+                                        <label class="btn w-100 position-relative rounded-pill py-2 option-label bg-white text-dark" for="ver_1tb">
+                                            <span class="fs-5">S26 Ultra 16GB 1TB</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="version" id="ver_512">
+                                        <label class="btn w-100 position-relative rounded-pill py-2 option-label bg-white text-dark" for="ver_512">
+                                            <span class="fs-5">S26 Ultra 12GB 512GB</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="version" id="ver_256">
+                                        <label class="btn w-100 position-relative rounded-pill py-2 option-label bg-white text-dark" for="ver_256">
+                                            <span class="fs-5">S26 Ultra 12GB 256GB</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="version" id="ver_plus_512">
+                                        <label class="btn w-100 position-relative rounded-pill py-2 option-label bg-white text-dark"
+                                            for="ver_plus_512">
+                                            <span class="fs-5">S26 Plus 12GB 512GB</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="version" id="ver_base_512">
+                                        <label class="btn w-100 position-relative rounded-pill py-2 option-label bg-white text-dark"
+                                            for="ver_base_512">
+                                            <span class="fs-5">S26 12GB 512GB</span>
+                                            <span
+                                                class="check-badge position-absolute top-0 start-100 translate-middle bg-primary border border-2 border-white rounded-circle align-items-center justify-content-center"
+                                                style="width: 22px; height: 22px;">
+                                                <i class="bi bi-check text-white lh-1"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                            
+                                    <div class="col-6">
+                                        <button type="button" class="btn bg-primary bg-opacity-25 text-primary w-100 rounded-pill py-2 border-0">
+                                            <span class="fs-5">Xem thêm phiên bản <i class="bi bi-chevron-down ms-1"></i></span>
+                                        </button>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mua ngay & Thêm vào giỏ hàng -->
+                        <div class="row pt-4">
+                            <div class="purchase-actions-container mx-auto" style="max-width: 500px;">
+                                <div class="d-flex justify-content-between align-items-center p-3 mb-3 border border-primary border-opacity-25 rounded-4 bg-primary bg-opacity-10">
+                                    <div class="price-info">
+                                        <div class="fs-3     fw-bold text-dark lh-1 mb-1">46.490.000đ</div>
+                                        <div class="fs-6 text-secondary text-decoration-line-through">51.990.000đ</div>
+                                    </div>
+                                    <button class="purchase btn btn-danger text-white fw-bold fs-4 px-4 py-2 rounded-3 shadow">
+                                        Mua Ngay
+                                    </button>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <button class="btn btn-outline-primary w-100 fw-bold fs-5 py-2 rounded-3">
+                                            Trả góp 0%
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-outline-danger w-100 fw-bold fs-5 py-2 rounded-3 d-flex align-items-center justify-content-center gap-2">
+                                            <i class="bi bi-cart-plus fs-4"></i> Thêm vào giỏ
+                                        </button>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </div>
+
+                        <!-- Gợi ý sản phẩm -->
+                        <div class="col mt-5">
+                        
+                            <div class="row">
+                                <p class="h3">Có thể bạn cũng thích</p>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        <div class="box-product-info p-2 mb-2">
+                                            <div class="position-relative d-inline-block">
+                                                <img loading="lazy" src="img/img_products/tablet.png" class="img-fluid rounded"
+                                                    alt="Ảnh sản phẩm">
+                                                <span
+                                                    class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
+                                                    SALE 25%
+                                                </span>
+                                            </div>
+                                            <p class="fs-4"><span class="fw-semibold">Samsung Galaxy Tab S11</span> Wifi 12GB 128GB</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="text-danger h4">19.990.000₫</p>
+                                                <p class="text-muted">Đã bán 366</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        <div class="box-product-info p-2 mb-2">
+                                            <div class="position-relative d-inline-block">
+                                                <img loading="lazy" src="img/img_products/laptop.png" class="img-fluid rounded"
+                                                    alt="Ảnh sản phẩm">
+                                                <span
+                                                    class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
+                                                    SALE 25%
+                                                </span>
+                                            </div>
+                                            <p class="fs-4"><span class="fw-semibold">HP 2024 Newest</span> 17.3" Business Laptop</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="text-danger h4">21.590.000₫</p>
+                                                <p class="text-muted">Đã bán 131</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-6 d-none d-lg-block">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        <div class="box-product-info p-2 mb-2">
+                                            <div class="position-relative d-inline-block">
+                                                <img loading="lazy" src="img/img_products/tablet.png" class="img-fluid rounded"
+                                                    alt="Ảnh sản phẩm">
+                                                <span
+                                                    class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
+                                                    SALE 25%
+                                                </span>
+                                            </div>
+                                            <p class="fs-4"><span class="fw-semibold">Samsung Galaxy Tab S11</span> Wifi 12GB 128GB</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="text-danger h4">19.990.000₫</p>
+                                                <p class="text-muted">Đã bán 366</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        <div class="box-product-info p-2 mb-2">
+                                            <div class="position-relative d-inline-block">
+                                                <img loading="lazy" src="img/img_products/tablet.png" class="img-fluid rounded"
+                                                    alt="Ảnh sản phẩm">
+                                                <span
+                                                    class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
+                                                    SALE 25%
+                                                </span>
+                                            </div>
+                                            <p class="fs-4"><span class="fw-semibold">Samsung Galaxy Tab S11</span> Wifi 12GB 128GB</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="text-danger h4">19.990.000₫</p>
+                                                <p class="text-muted">Đã bán 366</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        <div class="box-product-info p-2 mb-2">
+                                            <div class="position-relative d-inline-block">
+                                                <img loading="lazy" src="img/img_products/laptop.png" class="img-fluid rounded"
+                                                    alt="Ảnh sản phẩm">
+                                                <span
+                                                    class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
+                                                    SALE 25%
+                                                </span>
+                                            </div>
+                                            <p class="fs-4"><span class="fw-semibold">HP 2024 Newest</span> 17.3" Business Laptop</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="text-danger h4">21.590.000₫</p>
+                                                <p class="text-muted">Đã bán 131</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-6 d-none d-lg-block">
+                                    <a href="#" class="text-decoration-none text-reset">
+                                        <div class="box-product-info p-2 mb-2">
+                                            <div class="position-relative d-inline-block">
+                                                <img loading="lazy" src="img/img_products/laptop.png" class="img-fluid rounded"
+                                                    alt="Ảnh sản phẩm">
+                                                <span
+                                                    class="box-sale position-absolute bottom-0 start-0 badge bg-primary p-2 px-3 fs-6 shadow-sm">
+                                                    SALE 25%
+                                                </span>
+                                            </div>
+                                            <p class="fs-4"><span class="fw-semibold">HP 2024 Newest</span> 17.3" Business Laptop</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="text-danger h4">21.590.000₫</p>
+                                                <p class="text-muted">Đã bán 131</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                    
                 </div>
+
+                <div class="row my-4">
+                    
+
+                    
+
+                </div>
+
             </div>
         </main>
+
+        <button onclick="scrollToTop()" id="backToTopBtn" class="btn btn-primary rounded-circle" title="Lên đầu trang">
+            <i class="bi bi-caret-up-fill"></i>
+        </button>
 
         <footer class="bg-light pt-5 pb-4 mt-5 border-top">
             <div class="container custom-footer my-4">
