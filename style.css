@@ -29,6 +29,11 @@ header {
     box-shadow: 12px;
 }
 
+/* Tùy chỉnh nút mua hàng */
+.purchase {
+    background-image: linear-gradient(to bottom, #FF0000, #C20000);
+}
+
 
 /* Nút quay về đầu trang */
 #backToTopBtn {
@@ -162,9 +167,4 @@ header {
 /* 3. Hiệu ứng Hover cho đẹp (Tùy chọn) */
 .option-label:hover {
   border-color: #a5c8fd !important; /* Xanh nhạt khi di chuột vào */
-}
-
-/* Tùy chỉnh nút mua hàng */
-.purchase {
-    background-image: linear-gradient(to bottom, #FF0000, #C20000);
 }

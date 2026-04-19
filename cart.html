@@ -266,104 +266,160 @@
         </header>
 
         <main>
+                
             <div class="container my-4">
 
-                <div class="row">
-                    <div class="col-12 d-flex align-items-center">
+                <div class="row mb-3">
+                    <div class="col d-flex align-items-center border-bottom border-black">
                         <button class="btn d-inline-flex align-items-center p-0 border-0" onclick="history.back()">
                             <i class="bi bi-chevron-left me-2 fs-2 fw-bold"></i>
                         </button>
-                        <p class="h3">Liên hệ với chúng tôi</p>
-                    </div>
-                    <div class="col ps-5 fs-5">
-                        <p>Liên hệ với chúng tôi về bất cứ điều gì liên quan đến website hoặc dịch vụ của chúng tôi.</p>
-                        <p>Chúng tôi sẽ phản hồi với bạn sớm nhất.</p>
+                        <p class="h3 mx-auto">Giỏ hàng của bạn</p>
                     </div>
                 </div>
-
-                <div class="row mt-5">
-
-                    <div class="col-lg-6 col-md-6 col-12 mb-3">
-                        <div class="container">
-                            <div class="row">
-                                <form action="#" method="post">
-
-                                    <div class="mb-3">
-                                        <label for="fullName" class="form-label fw-bold">Họ và tên</label>
-                                        <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Nhập họ và tên của bạn" required>
+                
+                <div class="row mb-3">
+                    
+                    <div class="col-lg-8 col-md-9 col-12 p-3">
+                        <div class="row d-flex gap-3 bg-white border rounded p-2 mb-3">
+                            <div class="col-3">
+                                <img src="img/img_cart/samsung-galaxy-s26-ultra_cart.png" alt="Ảnh sản phẩm đã thêm vào giỏ hàng" class="img-fluid">
+                            </div>
+                            <div class="col d-flex flex-column justify-content-between">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fs-4 fw-semibold">Samsung Galaxy S26 Ultra 16GB 1TB-Đen Classic</span>
+                                    <button class="btn btn-sm p-0 border-0 bg-transparent text-dark">
+                                        <i class="bi bi-trash-fill fs-4"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <span class="fs-4 fw-semibold text-danger">46.490.000₫</span>
+                                        <span class="text-muted text-decoration-line-through ms-2 fw-semibold" style="font-size: 0.9rem;">51.990.000₫</span>
                                     </div>
-
-                                    <div class="mb-3">
-                                        <label for="phoneNumber" class="form-label fw-bold">SĐT</label>
-                                        <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Nhập số điện thoại của bạn" required>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <button class="btn btn-light border px-2 py-1" style="line-height: 1.2;">-</button>
+                                            <span class="px-3 fw-medium">1</span>
+                                        <button class="btn btn-light border px-2 py-1" style="line-height: 1.2;">+</button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                    <div class="mb-3">
-                                        <label for="emailAddress" class="form-label fw-bold">Email</label>
-                                        <input type="email" name="emailAddress" id="emailAddress" class="form-control" placeholder="Nhập email của bạn" required>
+                        <div class="row d-flex gap-3 bg-white border rounded p-2 mb-3">
+                            <div class="col-3">
+                                <img src="img/img_cart/laptop_cart.png" alt="Ảnh sản phẩm đã thêm vào giỏ hàng" class="img-fluid">
+                            </div>
+                            <div class="col d-flex flex-column justify-content-between">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fs-4 fw-semibold">Laptop HP 2024 Newest 17.3" Business Laptop</span>
+                                    <button class="btn btn-sm p-0 border-0 bg-transparent text-dark">
+                                        <i class="bi bi-trash-fill fs-4"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <span class="fs-4 fw-semibold text-danger">21.590.000₫</span>
+                                        <span class="text-muted text-decoration-line-through ms-2 fw-semibold" style="font-size: 0.9rem;">23.990.000₫</span>
                                     </div>
-
-                                    <div class="mb-3">
-                                        <label for="requestType" class="form-label fw-bold">Chủ đề cần hỗ trợ:  </label>
-                                        <select name="requestType" id="requestType" required>
-                                            <option value="" selected disabled>-- Vui lòng chọn loại yêu cầu --</option>
-                                            <option value="1">Hỗ trợ kỹ thuật</option>
-                                            <option value="2">Báo lỗi hệ thống</option>
-                                            <option value="3">Góp ý / Phản hồi</option>
-                                            <option value="4">Khác</option>
-                                        </select>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <button class="btn btn-light border px-2 py-1" style="line-height: 1.2;">-</button>
+                                            <span class="px-3 fw-medium">1</span>
+                                        <button class="btn btn-light border px-2 py-1" style="line-height: 1.2;">+</button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                    <div class="d-grid mb-3">
-                                        <label for="message" class="form-label fw-bold">Nội dung chi tiết</label>
-                                        <textarea name="message" id="message" class="form-control" rows="10" placeholder="Mô tả chi tiết vấn đề của bạn để chúng tôi hỗ trợ tốt nhất..." required></textarea>
+                        <div class="row d-flex gap-3 bg-white border rounded p-2 mb-3">
+                            <div class="col-3">
+                                <img src="img/img_cart/tablet_cart.png" alt="Ảnh sản phẩm đã thêm vào giỏ hàng" class="img-fluid">
+                            </div>
+                            <div class="col d-flex flex-column justify-content-between">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fs-4 fw-semibold">Samsung Galaxy Tab S11 Wifi 12GB 128GB</span>
+                                    <button class="btn btn-sm p-0 border-0 bg-transparent text-dark">
+                                        <i class="bi bi-trash-fill fs-4"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <span class="fs-4 fw-semibold text-danger">19.990.000₫</span>
+                                        <span class="text-muted text-decoration-line-through ms-2 fw-semibold" style="font-size: 0.9rem;">21.990.000₫</span>
                                     </div>
-
-                                    <div class="d-grid">
-                                        <button type="submit" class="button btn btn-primary btn-lg">Gửi yêu cầu</button>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <button class="btn btn-light border px-2 py-1" style="line-height: 1.2;">-</button>
+                                            <span class="px-3 fw-medium">1</span>
+                                        <button class="btn btn-light border px-2 py-1" style="line-height: 1.2;">+</button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                </form>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-warning border-0">
+                                    Xóa tất cả sản phẩm
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col border rounded bg-light shadow p-3">
+                        <div class="d-flex flex-column bg-body rounded p-1 mb-3">
+                            <span class="fw-semibold"><i class="bi bi-geo-alt-fill text-primary fs-5"></i> Địa chỉ giao hàng:</span>
+                            <span class="">Công viên phần mềm Quang Trung, phường Trung Mỹ Tây, TP. HCM</span>
+                            <button class="btn btn-sm p-0 border-0 text-primary"><span>Thay đổi <i class="bi bi-caret-right-fill"></i></span></button>
+                        </div>
 
-                        <div class="row mb-4">
-                            <div>
-                                <img loading="lazy" src="img/Logo_TechMart-removebg.png" class="img-fluid h-75 d-block mx-auto" alt="TechMart">
+                        <div class="d-flex flex-column bg-body rounded p-1 mb-3">
+                            <span class="fw-semibold"><i class="bi bi-bag-check-fill text-primary fs-5"></i> Sản phẩm mua:</span>
+
+                            <ul>
+                                <li class="d-flex justify-content-between">
+                                    <span>Samsung Galaxy S26 Ultra 16GB 1TB-Đen Classic</span>
+                                    <span class="text-muted">x1</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Laptop HP 2024 Newest 17.3" Business Laptop</span>
+                                    <span class="text-muted">x1</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Samsung Galaxy Tab S11 Wifi 12GB 128GB</span>
+                                    <span class="text-muted">x1</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex flex-column bg-body rounded p-1 mb-3">
+                            <span class="fw-semibold"><i class="bi bi-ticket-fill text-primary fs-5"></i> Voucher áp dụng:</span>
+                            <div class="bg-danger-subtle border border-danger mx-3 my-1 rounded d-flex justify-content-between">
+                                <span class="p-2">Tặng Chuột Gaming Không Giây</span>
+                                <span class="p-2">x1</span>
                             </div>
-                            <div class="text-center">
-                                <a href="#" class="p-2"><img loading="lazy" src="img/youtube.png" alt=""></a>
-                                <a href="#" class="p-2"><img loading="lazy" src="img/facebook.png" alt=""></a>
-                                <a href="#" class="p-2"><img loading="lazy" src="img/instagram.png" alt=""></a>
-                                <a href="#" class="p-2"><img loading="lazy" src="img/tiktok.png" alt=""></a>
-                                <a href="#" class="p-2"><img loading="lazy" src="img/zalo.png" alt=""></a>
+                            <button class="btn btn-sm p-0 border-0 text-primary"><span>Thay đổi <i class="bi bi-caret-right-fill"></i></span></button>
+                        </div>
+
+                        <div class="d-flex flex-column bg-body rounded p-1 mb-3">
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input fs-5 shadow-none" type="checkbox" value="" id="checkAll">
+                                <label class="form-check-label ms-2" for="checkAll">
+                                    Tôi đồng ý với tất cả <a href="#">chính sách chủa cửa hàng</a>.
+                                </label>
                             </div>
                         </div>
 
-                        <div class="row text-center">
-                            <p><span class="fw-bold">Hotline Tư vấn/Mua hàng:</span> 1900.0001</p>
-                            <p><span class="fw-bold">Hotline Hỗ trợ kỹ thuật:</span> 1900.0002</p>
-                            <p><span class="fw-bold">Hotline Bảo hành/Khiếu nại:</span> 1900.0003</p>
-                            <p><span class="fw-bold">Email CSKH:</span> shopmart_cskh@gmail.com</p>
-                            <p><span class="fw-bold">Địa chỉ:</span> Công viên phần mềm Quang Trung, phường Trung Mỹ Tây, TP. HCM</p>
+                        <div class="d-flex flex-column bg-body rounded p-1 mb-3">
+                            <button class="purchase btn btn-danger text-white fw-bold fs-4 fw-bolder px-4 py-2">
+                                Mua Ngay
+                            </button>
                         </div>
-
-                        <div class="ratio ratio-16x9 shadow rounded border">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4355942317547!2d106.62392780790232!3d10.854436300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1776502133132!5m2!1svi!2s"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-
                     </div>
 
                 </div>
 
             </div>
+
         </main>
 
         <button onclick="scrollToTop()" id="backToTopBtn" class="btn btn-primary rounded-circle" title="Lên đầu trang">
